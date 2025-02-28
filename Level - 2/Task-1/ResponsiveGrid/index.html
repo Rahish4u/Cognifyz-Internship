@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: fill;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            height: fit-content;
+        }
+        .card-content {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img src="https://r2.erweima.ai/imgcompressed/compressed_6dc626f5c434538b10ce16aaccb8e9e2.webp" alt="Product Manager">
+                    <div class="card-content">
+                        <h4>Amit Singh</h4>
+                        <p class="text-muted">Product Manager</p>
+                        <p>Expert in managing product development, ensuring execution from idea to launch.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img src="https://img.freepik.com/premium-photo/programmer-3d-character-game-developer-coder-guy-uses-computer-laptop-ai-generative_955712-8381.jpg" alt="Software Developer">
+                    <div class="card-content">
+                        <h4>Harishankar</h4>
+                        <p class="text-muted">Software Developer</p>
+                        <p>Passionate about front-end and back-end development, specializing in the MERN stack.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img src="https://img.freepik.com/free-photo/3d-portrait-people_23-2150793852.jpg?semt=ais_hybrid" alt="Product Manager">
+                    <div class="card-content">
+                        <h4>Rahish Ali</h4>
+                        <p class="text-muted">Product Manager</p>
+                        <p>Skilled in product strategy, user experience, and cross-functional collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

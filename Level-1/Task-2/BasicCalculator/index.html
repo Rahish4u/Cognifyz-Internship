@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        margin: 20px auto;
+        text-align: center;
+        background: #ede7e7;
+        border-radius: 20px;
+      }
+      input {
+        width: auto;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      button {
+        width: 30%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Calculator</h1>
+      <input type="text" id="num1" placeholder="Enter first number" />
+      <input type="text" id="num2" placeholder="Enter second number" />
+      <button onclick="calculateSum()">Add</button>
+      <h3>Result: <span id="result">0</span></h3>
+    </div>
+
+    <script>
+      function calculateSum() {
+        const num1 = parseInt(document.getElementById("num1").value);
+        const num2 = parseInt(document.getElementById("num2").value);
+        const sum = num1 + num2;
+        document.getElementById("result").innerText = sum;
+
+        // Clear input fields after calculation
+        document.getElementById("num1").value = "";
+        document.getElementById("num2").value = "";
+      }
+      calculateSum();
+    </script>
+  </body>
+</html>
