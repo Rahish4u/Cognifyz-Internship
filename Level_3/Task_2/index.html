@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="font-sans bg-blue-300">
+    
+    <!-- Navigation Bar -->
+    <nav class="text-white py-4 fixed w-full top-0 z-50 shadow-lg border-b bg-black">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wide uppercase">Cognifyz</a>
+            <ul id="menu" class="hidden md:flex space-x-6 uppercase font-medium">
+                <li><a href="#home" class="hover:text-gray-300 transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-300 transition duration-300">About Us</a></li>
+                <li><a href="#contact" class="hover:text-gray-300 transition duration-300">Contact</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden focus:outline-none text-xl">☰</button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center min-h-screen flex flex-col justify-center items-center text-center px-4" style="background-image: url('./Assets/bg-2.png');">
+        <div class="bg-black bg-opacity-50 px-8 py-16 rounded-lg">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4" data-aos="fade-up">Web Developer Internship at Cognifyz</h1>
+            <p class="text-lg text-gray-200 mb-6" data-aos="fade-up" data-aos-delay="200">Gain hands-on experience in modern web development.</p>
+            <a href="#apply" class="px-6 py-3 bg-white text-blue-600 rounded-full hover:bg-gray-200 transition" data-aos="zoom-in">Apply Now</a>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6" data-aos="fade-down">Why Choose Cognifyz?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+                <div class="p-4 bg-white shadow-lg rounded-lg" data-aos="fade-up">
+                    <img src="./Assets/real world project.jpg" alt="project" class="w-full h-48 object-cover mx-auto mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold">Real-World Projects</h3>
+                    <p class="text-gray-600">Work on live projects and build your portfolio.</p>
+                </div>
+                <div class="p-4 bg-white shadow-lg rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="./Assets/mentorship.jpg" alt="mentorship" class="w-full h-48 object-cover mx-auto mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold">Expert Mentorship</h3>
+                    <p class="text-gray-600">Learn from experienced professionals.</p>
+                </div>
+                <div class="p-4 bg-white shadow-lg rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                    <img src="./Assets/bg-1.jpg" alt="skill development" class="w-full h-48 object-cover mx-auto mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold">Skill Development</h3>
+                    <p class="text-gray-600">Master in-demand technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Apply Section -->
+    <section id="apply" class="py-16 bg-black text-white text-center">
+        <h2 class="text-3xl font-semibold mb-4" data-aos="fade-down">Kickstart Your Career</h2>
+        <p class="text-lg mb-6" data-aos="fade-up">Apply now and start your web development journey with us.</p>
+        <a href="#contact" class="px-6 py-3 bg-white text-blue-600 rounded-full hover:bg-gray-200 transition">Apply Now</a>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6" data-aos="fade-down">Get in Touch</h2>
+            <p class="text-gray-600 mb-8" data-aos="fade-up">Have questions? Reach out to us.</p>
+            <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                <input type="text" placeholder="Your Name" class="w-full mb-4 p-3 border rounded-lg">
+                <input type="email" placeholder="Your Email" class="w-full mb-4 p-3 border rounded-lg">
+                <textarea placeholder="Your Message" class="w-full mb-4 p-3 border rounded-lg"></textarea>
+                <button class="w-full bg-gray-900 text-white py-3 rounded-lg hover:bg-gray-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; 2024 Cognifyz Technologies. All rights reserved.</p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        
+        // Mobile Menu Toggle
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
